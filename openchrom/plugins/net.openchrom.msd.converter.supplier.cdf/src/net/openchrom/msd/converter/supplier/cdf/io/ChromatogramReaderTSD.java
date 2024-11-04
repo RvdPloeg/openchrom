@@ -25,7 +25,7 @@ import org.eclipse.chemclipse.msd.model.core.IChromatogramMSD;
 import org.eclipse.chemclipse.processing.core.IProcessingInfo;
 import org.eclipse.chemclipse.processing.core.ProcessingInfo;
 import org.eclipse.chemclipse.tsd.converter.core.IImportConverterTSD;
-import org.eclipse.chemclipse.tsd.converter.core.model.TraceRangeMatcher;
+import org.eclipse.chemclipse.tsd.converter.core.matcher.TraceRangeMatcher;
 import org.eclipse.chemclipse.tsd.model.core.IChromatogramTSD;
 import org.eclipse.chemclipse.tsd.model.core.IScanTSD;
 import org.eclipse.chemclipse.tsd.model.core.ScanTSD;
