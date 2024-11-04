@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (c) 2023 Lablicate GmbH.
+ * Copyright (c) 2023, 2024 Lablicate GmbH.
  *
  * All rights reserved. This program and the accompanying materials
  * are made available under the terms of the Eclipse Public License v1.0
@@ -26,6 +26,7 @@ import org.eclipse.chemclipse.model.identifier.IIdentifierSettings;
 import org.eclipse.chemclipse.msd.model.core.AbstractIon;
 import org.eclipse.chemclipse.msd.model.core.IIon;
 import org.eclipse.chemclipse.msd.model.core.IScanMSD;
+import org.eclipse.chemclipse.support.literature.LiteratureReference;
 import org.eclipse.chemclipse.support.text.ValueFormat;
 
 import net.openchrom.msd.identifier.supplier.massbank.preferences.PreferenceSupplier;
@@ -93,5 +94,11 @@ public class ScanIdentifier implements IScanIdentifierSupplier {
 			i++;
 		}
 		return stringBuilder.toString();
+	}
+
+	@Override
+	public List<LiteratureReference> getLiteratureReferences() {
+
+		return null;
 	}
 }

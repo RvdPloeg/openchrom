@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (c) 2020, 2023 Lablicate GmbH.
+ * Copyright (c) 2020, 2024 Lablicate GmbH.
  *
  * All rights reserved. This program and the accompanying materials
  * are made available under the terms of the Eclipse Public License v1.0
@@ -27,6 +27,7 @@ import org.eclipse.chemclipse.model.identifier.IIdentificationTarget;
 import org.eclipse.chemclipse.model.identifier.ILibraryInformation;
 import org.eclipse.chemclipse.processing.core.IProcessingInfo;
 import org.eclipse.chemclipse.processing.core.ProcessingInfo;
+import org.eclipse.chemclipse.support.literature.LiteratureReference;
 import org.eclipse.chemclipse.support.ui.workbench.DisplayUtils;
 import org.eclipse.chemclipse.wsd.model.core.IPeakWSD;
 import org.eclipse.core.runtime.IProgressMonitor;
@@ -113,6 +114,12 @@ public class PeakReviewDirectWSD<T> extends AbstractPeakIdentifier implements IP
 			}
 		}
 		//
+		return null;
+	}
+
+	@Override
+	public List<LiteratureReference> getLiteratureReferences() {
+
 		return null;
 	}
 }

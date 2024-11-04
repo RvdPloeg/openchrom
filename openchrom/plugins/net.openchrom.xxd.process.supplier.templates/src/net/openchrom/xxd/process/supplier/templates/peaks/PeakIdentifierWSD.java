@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (c) 2018, 2022 Lablicate GmbH.
+ * Copyright (c) 2018, 2024 Lablicate GmbH.
  *
  * All rights reserved. This program and the accompanying materials
  * are made available under the terms of the Eclipse Public License v1.0
@@ -19,6 +19,7 @@ import org.eclipse.chemclipse.chromatogram.wsd.identifier.settings.IPeakIdentifi
 import org.eclipse.chemclipse.model.identifier.IIdentificationResults;
 import org.eclipse.chemclipse.model.support.RetentionIndexMap;
 import org.eclipse.chemclipse.processing.core.IProcessingInfo;
+import org.eclipse.chemclipse.support.literature.LiteratureReference;
 import org.eclipse.chemclipse.wsd.model.core.IPeakWSD;
 import org.eclipse.core.runtime.IProgressMonitor;
 
@@ -36,5 +37,11 @@ public class PeakIdentifierWSD<T> extends AbstractPeakIdentifier implements IPea
 		//
 		RetentionIndexMap retentionIndexMap = RetentionIndexSupport.getRetentionIndexMap(peaks);
 		return applyIdentifier(peaks, settings, retentionIndexMap, monitor);
+	}
+
+	@Override
+	public List<LiteratureReference> getLiteratureReferences() {
+
+		return null;
 	}
 }

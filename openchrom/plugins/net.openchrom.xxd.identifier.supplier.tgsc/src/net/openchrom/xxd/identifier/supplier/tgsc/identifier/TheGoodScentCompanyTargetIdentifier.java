@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (c) 2023 Lablicate GmbH.
+ * Copyright (c) 2023, 2024 Lablicate GmbH.
  *
  * All rights reserved. This program and the accompanying materials
  * are made available under the terms of the Eclipse Public License v1.0
@@ -14,12 +14,14 @@ package net.openchrom.xxd.identifier.supplier.tgsc.identifier;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.text.MessageFormat;
+import java.util.List;
 
 import org.eclipse.chemclipse.chromatogram.xxd.identifier.targets.ITargetIdentifierSupplier;
 import org.eclipse.chemclipse.logging.core.Logger;
 import org.eclipse.chemclipse.model.cas.CasSupport;
 import org.eclipse.chemclipse.model.identifier.IIdentifierSettings;
 import org.eclipse.chemclipse.model.identifier.ILibraryInformation;
+import org.eclipse.chemclipse.support.literature.LiteratureReference;
 
 public class TheGoodScentCompanyTargetIdentifier implements ITargetIdentifierSupplier {
 
@@ -63,5 +65,11 @@ public class TheGoodScentCompanyTargetIdentifier implements ITargetIdentifierSup
 			logger.warn(e);
 		}
 		return url;
+	}
+
+	@Override
+	public List<LiteratureReference> getLiteratureReferences() {
+
+		return null;
 	}
 }
