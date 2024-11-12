@@ -23,7 +23,7 @@ http://www.eclipse.org/legal/epl-v10.html
    </license>
 
    <requires>
-      <import feature="net.openchrom.thirdparty.cdk.feature" version="2.3.0.qualifier"/>
+      <import feature="net.openchrom.thirdparty.cdk.feature" version="2.9"/>
    </requires>
 
    <plugin
